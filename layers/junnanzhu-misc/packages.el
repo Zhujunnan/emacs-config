@@ -31,6 +31,7 @@
         helm-ag
         ranger
         golden-ratio
+        youdao-dictionary
         (highlight-global :location (recipe :fetcher github :repo "glen-dai/highlight-global"))
         ))
 
@@ -41,10 +42,10 @@
       (spacemacs/set-leader-keys "hh" 'highlight-frame-toggle)
       (spacemacs/set-leader-keys "hc" 'clear-highlight-frame)
       (setq-default highlight-faces
-        '(('hi-red-b . 0)
-          ('hi-yellow . 0)
-          ('hi-pink . 0)
-          ('hi-blue-b . 0))))))
+                    '(('hi-red-b . 0)
+                      ('hi-yellow . 0)
+                      ('hi-pink . 0)
+                      ('hi-blue-b . 0))))))
 
 (defun junnanzhu-misc/post-init-golden-ratio ()
   (with-eval-after-load 'golden-ratio
@@ -1100,7 +1101,7 @@ Search for a search tool in the order provided by `dotspacemacs-search-tools'."
         (setq magit-completing-read-function 'magit-builtin-completing-read)
 
         (magit-define-popup-switch 'magit-push-popup ?u
-          "Set upstream" "--set-upstream")
+                                   "Set upstream" "--set-upstream")
         ))
 
     ;; prefer two way ediff
@@ -1139,3 +1140,13 @@ Search for a search tool in the order provided by `dotspacemacs-search-tools'."
         (evil-define-key 'normal markdown-mode-map (kbd "TAB") 'markdown-cycle)
         ))
     ))
+
+(defun junnanzhu/init-youdao-dictionary()
+  (use-package youdao-dictionary
+    :defer t
+    :init
+
+    ;; (spacemacs/set-leader-keys "oy" 'youdao-dictionary-search-at-point+)
+
+    )
+  )

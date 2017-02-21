@@ -9,4 +9,4 @@
 ;;
 ;;; License: GPLv3
 
-(configuration-layer/remove-layer 'chinese)
+;; (configuration-layer/remove-layer 'chinese)
