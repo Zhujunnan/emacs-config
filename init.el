@@ -92,6 +92,9 @@ values."
      (chinese :packages youdao-dictionary fcitx
               :variables chinese-enable-fcitx nil
               chinese-enable-youdao-dict t)
+     emoji
+     dash
+     fasd
      junnanzhu
      ;; version-control
      )
@@ -371,6 +374,8 @@ values."
     (when (and (spacemacs/system-is-mac) window-system)
       (spacemacs//set-monospaced-font "Source Code Pro" "Hiragino Sans GB" 14 16)))
 
+  ;; to fix ranger-mode : Symbol's value is void :bookmark-alist
+  (require 'bookmark)
 
   ;; Setting Chinese Font
   (when (and (spacemacs/system-is-mswindows) window-system)
