@@ -166,5 +166,5 @@
 
 (csetq ediff-diff-options "-w")
 
-;;(set-face-attribute 'region nil :background "#00edff")
+;; (set-face-attribute 'region nil :background "#00edff")
 (set-face-attribute 'region nil :background "#00edff" :foreground "#ff0000")

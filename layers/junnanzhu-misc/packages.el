@@ -32,6 +32,7 @@
         ranger
         golden-ratio
         youdao-dictionary
+        elfeed
         (highlight-global :location (recipe :fetcher github :repo "glen-dai/highlight-global"))
         ))
 
@@ -630,7 +631,8 @@ Search for a search tool in the order provided by `dotspacemacs-search-tools'."
               "http://blog.devtang.com/atom.xml"
               "http://emacsist.com/rss"
               "http://puntoblogspot.blogspot.com/feeds/2507074905876002529/comments/default"
-              "http://angelic-sedition.github.io/atom.xml"))
+              "http://angelic-sedition.github.io/atom.xml"
+              "http://arxiv.org/rss/cs"))
 
       ;; (evilify elfeed-search-mode elfeed-search-mode-map)
       (evilified-state-evilify-map elfeed-search-mode-map
