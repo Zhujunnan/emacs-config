@@ -625,14 +625,14 @@ Search for a search tool in the order provided by `dotspacemacs-search-tools'."
               "http://blog.gemserk.com/feed/"
               "http://www.masteringemacs.org/feed/"
               "http://t-machine.org/index.php/feed/"
-              "http://gameenginebook.blogspot.com/feeds/posts/default"
               "http://feeds.feedburner.com/ruanyifeng"
               "http://coolshell.cn/feed"
               "http://blog.devtang.com/atom.xml"
               "http://emacsist.com/rss"
               "http://puntoblogspot.blogspot.com/feeds/2507074905876002529/comments/default"
               "http://angelic-sedition.github.io/atom.xml"
-              "http://arxiv.org/rss/cs"))
+              "http://www.wildml.com/feed/"
+              "http://www.matrix67.com/blog/feed"))
 
       ;; (evilify elfeed-search-mode elfeed-search-mode-map)
       (evilified-state-evilify-map elfeed-search-mode-map
