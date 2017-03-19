@@ -19,7 +19,8 @@
 ;; http://emacs.stackexchange.com/questions/220/how-to-bind-c-i-as-different-from-tab
 ;; (define-key input-decode-map [?\C-i] [C-i])
 ;; (define-key evil-normal-state-map (kbd "C-i") 'evil-jump-forward)
-(global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
+;; (global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
+(global-set-key (kbd "C-M-\\") 'spacemacs/indent-region-or-buffer)
 (global-set-key [remap fill-paragraph] #'endless/fill-or-unfill)
 
 ;; (global-set-key (kbd "C-.") 'company-capf)
